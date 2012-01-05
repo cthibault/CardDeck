@@ -23,6 +23,12 @@ public abstract class Card
 		return this.getIsFaceUp() ? "[Front of Card]" : "[Back of Card]";
 	}
 	
+	@Override
+	public String toString()
+	{
+		return this.Display();
+	}
+	
 	
 	//PRIVATE FIELDS
 	private boolean _isFaceUp = false;

@@ -39,6 +39,19 @@ public class CardTests extends AndroidTestCase
 		assertEquals(expected, card.Display());
 	}
 	
+	public void testJoker_AllJokersAreEqual()
+	{
+		//Arrange
+		Card card1 = new Joker();
+		Card card2 = new Joker();		
+		
+		//Act
+		//nothing to do
+		
+		//Assert
+		assertEquals(card1, card2);
+	}
+	
 	public void testPlayingCard_FaceDown_DisplaysFrontOfCardWithoutValue()
 	{
 		//Arrange
